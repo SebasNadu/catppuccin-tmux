@@ -312,7 +312,7 @@ main() {
   local pane_border_style=$(get_tmux_option "@catppuccin_pane_border_style" "fg=${thm_gray}")
   local pane_active_border_style=$(get_tmux_option "@catppuccin_pane_active_border_style" "fg=${thm_blue}")
   local pane_left_separator=$(get_tmux_option "@catppuccin_pane_left_separator" " ")
-  local pane_middle_separator=$(get_tmux_option "@catppuccin_pane_middle_separator" "█")
+  local pane_middle_separator=$(get_tmux_option "@catppuccin_pane_middle_separator" " ")
   local pane_right_separator=$(get_tmux_option "@catppuccin_pane_right_separator" " ")
   local pane_number_position=$(get_tmux_option "@catppuccin_pane_number_position" "left") # right, left
   local pane_format=$(load_modules "pane_default_format" "$modules_custom_path" "$modules_pane_path")
