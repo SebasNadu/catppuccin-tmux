@@ -148,12 +148,12 @@ build_window_format() {
 
     if [ "$window_number_position" = "right" ]; then
       local show_left_separator="#[fg=$background,bg=default,nobold,nounderscore,noitalics]$window_left_separator"
-      local show_right_separator="#[fg=$color,bg=default]$window_right_separator"
+      local show_right_separator="#[fg=$color,bg=default]$window_right_separator "
     fi
 
     if [ "$window_number_position" = "left" ]; then
       local show_right_separator="#[fg=$background,bg=default,nobold,nounderscore,noitalics]$window_right_separator"
-      local show_left_separator="#[fg=$color,bg=default]$window_left_separator"
+      local show_left_separator="#[fg=$color,bg=default]$window_left_separator "
     fi
 
   fi
