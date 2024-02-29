@@ -142,18 +142,18 @@ build_window_format() {
   fi
 
   if [ "$fill" = "number" ]; then
-    local show_number="#[fg=$background,bg=$color]$number"
+    local show_number="#[fg=$background,bg=$color]$number "
     local show_middle_separator="#[fg=$color,bg=$background,nobold,nounderscore,noitalics]$window_middle_separator"
     local show_text="#[fg=$thm_fg,bg=$background]$text"
 
     if [ "$window_number_position" = "right" ]; then
       local show_left_separator="#[fg=$background,bg=default,nobold,nounderscore,noitalics]$window_left_separator"
-      local show_right_separator="#[fg=$color,bg=default]$window_right_separator "
+      local show_right_separator="#[fg=$color,bg=default]$window_right_separator"
     fi
 
     if [ "$window_number_position" = "left" ]; then
       local show_right_separator="#[fg=$background,bg=default,nobold,nounderscore,noitalics]$window_right_separator"
-      local show_left_separator="#[fg=$color,bg=default]$window_left_separator "
+      local show_left_separator="#[fg=$color,bg=default]$window_left_separator"
     fi
 
   fi
