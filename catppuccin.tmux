@@ -181,7 +181,7 @@ build_status_module() {
     local show_left_separator="#[fg=$color,bg=default,nobold,nounderscore,noitalics]$status_left_separator"
 
     local show_icon="#[fg=$thm_bg,bg=$color,nobold,nounderscore,noitalics]$icon "
-    local show_text="#[fg=$thm_white,bg=default] $text"
+    local show_text="#[fg=$thm_fg,bg=default] $text"
 
     local show_right_separator="#[fg=$thm_gray,bg=default,nobold,nounderscore,noitalics]$status_right_separator"
 
