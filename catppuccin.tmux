@@ -297,7 +297,7 @@ main() {
   # status
   set status "on"
   set status-bg default
-  set status-justify "left"
+  set status-justify "centre" # centre, right, left
   set status-left-length "100"
   set status-right-length "100"
   set status-left-style fg=default,bg=default
@@ -309,8 +309,8 @@ main() {
   # panes
   local pane_status_enable=$(get_tmux_option "@catppuccin_pane_status_enabled" "no") # yes
   local pane_border_status=$(get_tmux_option "@catppuccin_pane_border_status" "off") # bottom
-  local pane_border_style=$(get_tmux_option "@catppuccin_pane_border_style" "fg=${thm_gray}")
-  local pane_active_border_style=$(get_tmux_option "@catppuccin_pane_active_border_style" "fg=${thm_blue}")
+  local pane_border_style=$(get_tmux_option "@catppuccin_pane_border_style" "fg=${thm_green}")
+  local pane_active_border_style=$(get_tmux_option "@catppuccin_pane_active_border_style" "fg=${thm_orange}")
   local pane_left_separator=$(get_tmux_option "@catppuccin_pane_left_separator" " ")
   local pane_middle_separator=$(get_tmux_option "@catppuccin_pane_middle_separator" " ")
   local pane_right_separator=$(get_tmux_option "@catppuccin_pane_right_separator" " ")
@@ -360,7 +360,7 @@ main() {
   # --------=== Modes
   #
   setw clock-mode-colour "${thm_blue}"
-  setw mode-style "fg=${thm_pink} bg=${thm_black4} bold"
+  setw mode-style "fg=${thm_pink} bg=${thm_black} bold"
 
   tmux "${tmux_commands[@]}"
 }
